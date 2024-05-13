@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Senior Advisers Agency</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa; /* Light gray background */
+        }
+
+        header {
+            background-color: #007bff; /* Navbar background color */
+        }
+
+        header .navbar-brand {
+            color: #fff; /* Navbar brand text color */
+            font-weight: bold;
+        }
+
+        header .navbar-nav .nav-link {
+            color: #fff; /* Navbar link text color */
+        }
+
+        .jumbotron {
+            background-color: #fff; /* White background for jumbotron */
+            margin-top: 50px; /* Add space between navbar and jumbotron */
+            padding: 50px; /* Add padding to jumbotron */
+            border-radius: 10px; /* Rounded corners for jumbotron */
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+        }
+
+        h1, h3, p {
+            color: #333; /* Text color */
+        }
+
+        .service {
+            background-color: #fff; /* White background for service cards */
+            border-radius: 10px; /* Rounded corners for service cards */
+            box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+            padding: 20px; /* Add padding to service cards */
+            margin-bottom: 30px; /* Add space between service cards */
+            transition: all 0.3s ease; /* Add transition effect */
+        }
+
+        .service:hover {
+            transform: translateY(-5px); /* Move card up slightly on hover */
+            box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1); /* Add larger shadow on hover */
+        }
+        .footer {
+            background-color: #333;
+            color: #f0ecec;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: all 0.3s;
+        }
+        .footer p{
+            color: rgb(255, 255, 255);
+        }
+        .footer a:hover {
+            color: lightblue;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Senior Advisors</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <!-- Jumbotron for main content -->
+        <div class="jumbotron">
+            <h1 class="text-center">Our Services</h1>
+            <p class="lead text-center">Discover the range of services we offer to help seniors lead fulfilling lives.</p>
+        </div>
+
+        <!-- Services Section -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="service">
+                    <h3>Financial Planning</h3>
+                    <p>We provide personalized financial planning services tailored to seniors' unique needs and goals.</p>
+                </div>
+                <div class="service">
+                    <h3>Healthcare Advisory</h3>
+                    <p>We offer comprehensive healthcare advisory services to help seniors navigate their healthcare options.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="service">
+                    <h3>Lifestyle Assistance</h3>
+                    <p>We assist seniors with lifestyle management, including recreational activities, social events, and more.</p>
+                </div>
+                <div class="service">
+                    <h3>Elderly Care Coordination</h3>
+                    <p>We coordinate elderly care services, ensuring seniors receive the support and assistance they need.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<footer class="footer">
+    <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+</footer>
+</html>

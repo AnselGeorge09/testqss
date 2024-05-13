@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Senior Advisers Agency</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Footer styles */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: all 0.3s;
+        }
+        .footer a:hover {
+            color: lightblue;
+        }
+        /* Contact form styles */
+        .contact-form {
+            margin-bottom: 50px; /* Add space at the bottom for the map and contact info */
+            position: relative; /* Position relative for absolute positioning of contact info */
+        }
+        /* Map container styles */
+        .map-container {
+            position: relative;
+            width: 100%;
+            height: 200px; /* Adjust height as needed */
+            margin-top: 30px; /* Add space between form and map */
+        }
+        /* Map iframe styles */
+        .map-container iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+        /* Contact info container styles */
+        .contact-info {
+            position: absolute;
+            top: 400px; /* Adjust top position */
+            right: -390px;
+            background-color: rgba(204, 197, 197, 0.5);
+            padding: 10px;
+            color: #000000;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Senior Advisors</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5 contact-form">
+        <h1>Contact Us</h1>
+        <p>Get in touch with us for any inquiries or to schedule a consultation.</p>
+
+        <!-- Contact Form -->
+        <form action="https://formspree.io/your_email_here" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <!-- Contact information -->
+        <div class="contact-info">
+            <p>Email us at: 27@gmail.com</p>
+            <p>Phone number: 770-989-7898</p>
+            <p>Address: 685 W Washington St, Summerville, GA 30747</p>
+        </div>
+    </div>
+
+    <!-- Map container -->
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13154.628123802077!2d-85.3553888!3d34.4862238!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8860275476ab6f35%3A0x88bf57ed1869061c!2sQuest%20Senior%20Solutions!5e0!3m2!1sen!2sus!4v1715569993824!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<footer class="footer">
+    <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+</footer>
+</html>
